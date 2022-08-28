@@ -3,6 +3,7 @@
 #include <stdlib.h>
 
 /*
+ * x86_64-w64-mingw32-gcc uac.c -o uac64.exe
  * Pretty standard code to recursively nuke a Reg Key
  */
 
@@ -60,7 +61,7 @@ void __c_exploitUAC() {
 	curPath is the command you want to elevate.
 	Below is an example that shows how to elevate
 	foobar.exe sitting in the same path as this
-	program.
+	program. Create a .exe using msfvenom then execute it with this. 
 	*/
 
 	/*
